@@ -1,0 +1,174 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6
+}
+
+.navbar{
+/*     
+    margin-right: 20px;
+    margin-left: 20px; */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* height: 70px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index:   1000;
+    
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* flex-direction: row; */
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    padding-top: 8px;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav-list a{
+    font-weight: 550;
+    font-size: 15px;
+    letter-spacing: 1px; 
+    text-transform: uppercase;   
+    transition: color 0.3s;
+}
+
+.nav-list a:hover{
+    color:#00704a;
+}
+
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.find-store{
+    font-weight: 580;
+    font-size: 15px;
+    padding-right: 40px;
+    transition: color 0.3s;
+}
+
+.find-store:hover{
+    color: #00704a;
+}
+
+.nav-right button{
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 580;
+    border: 1px solid #000;
+    
+}
+
+.btn-sign{
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: white;
+}
+
+.btn-sign:hover{
+    background: #f0f0f0;
+}
+
+.btn-join{
+    background-color: black;
+    color: white;
+    transition: background 0.3s;
+    cursor: pointer;
+    /* transition: opacity 0.2s; */
+}
+
+.btn-join:hover {
+    /* opacity: 3; */
+    background: #646464;
+}
+
+
+.hero-section {
+    padding: 60px 40px;
+    
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1e3932;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00704A;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #005a3a;
+}
