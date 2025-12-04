@@ -117,8 +117,49 @@ a{
     background: #646464;
 }
 
+section{
+    align-items: center;
+}
+.pre-main{
+    /* height: 100px; */
+    padding: 40px;
+    background-color: #32462F;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
 
-.hero-section {
+.line{
+    display: flex;
+    gap: 20px;
+}
+
+.line p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-content: center  ;
+
+}
+
+.start{
+    border: 2px solid white;
+    background-color: #32462F;
+    border-radius: 30px;
+    color: white;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    /* letter-spacing: 1px; */
+}
+
+
+/* .hero-section {
     padding: 60px 40px;
     
 }
@@ -171,4 +212,4 @@ a{
 
 .btn-primary:hover {
     background: #005a3a;
-}
+} */
