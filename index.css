@@ -1,6 +1,7 @@
 * {
    margin: 0;
    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -33,7 +34,7 @@ body{
     /* flex-direction: row; */
 }
 
-img{
+.logo{
     height: 50px;
     width: 50px;
     padding-top: 8px;
@@ -155,61 +156,113 @@ section{
     font-weight: 500;
     font-size: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
     /* letter-spacing: 1px; */
 }
 
 
-/* .hero-section {
-    padding: 60px 40px;
+.start:hover{
+    background-color: #058659;
+}
+
+
+.hero{
+    
+    margin-top: 40px;
+    background-color: #9E0025;
+ 
+}
+
+.h-content{
+    display: flex;
+    align-content: center;
+    gap: 60px;
+    /* center the content; column widths handled on children */
+    justify-content: center;
+    background-size: cover;
+    /* Ensure the two columns match height */
+    align-items: stretch;
+    min-height: 550px;
+}
+
+.hero-img{
+    /* Make exact half width minus half the gap so two columns total 100% */
+    flex: 0 0 calc(50% - 30px);
+    overflow: hidden;
+}
+
+.hero-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 
-.hero-content {
+.hero-text{
+    /* Match the image column width */
+    flex: 0 0 calc(50% - 30px);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
 }
 
-.hero-text {
-    flex: 1;
-}
-
-.hero-text h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #1e3932;
-    font-weight: 600;
-}
-
-.hero-text p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.hero-image {
-    flex: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.btn-primary {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #00704A;
+.hero-text h2{
     color: white;
-    border-radius: 50px;
     font-weight: 600;
-    transition: background 0.3s;
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* remove large top padding so heading centers vertically */
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
 }
 
-.btn-primary:hover {
-    background: #005a3a;
-} */
+
+.hero-text p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-order{
+    border: 2px solid white;
+    background-color: #9E0025;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* letter-spacing: 1px; */
+}
+
+.btn-order:hover{
+    background-color: #50080c;
+}
+
+/* Responsive: stack hero columns on small screens */
+@media (max-width: 768px) {
+    .h-content{
+        flex-direction: column;
+        min-height: auto;
+        gap: 20px;
+    }
+    .hero-img,
+    .hero-text{
+        flex: none;
+        width: 100%;
+    }
+    .hero-img img{
+        height: 320px;
+        object-fit: cover;
+    }
+    .hero-text{
+        padding: 24px;
+    }
+}
